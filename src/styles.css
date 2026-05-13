@@ -42,13 +42,13 @@
 :root {
   --radius: 0.25rem;
 
-  /* Industrial Precision palette */
-  --iron: oklch(0.22 0.005 240);
-  --safety: oklch(0.65 0.18 40);
-  --concrete: oklch(0.965 0.002 240);
-  --steel: oklch(0.86 0.005 240);
+  /* Industrial Precision palette — #1A2633 / #BA7517 / #F6F4F1 */
+  --iron: oklch(0.265 0.029 244);
+  --safety: oklch(0.605 0.131 60);
+  --concrete: oklch(0.967 0.005 80);
+  --steel: oklch(0.88 0.008 80);
 
-  --background: oklch(1 0 0);
+  --background: var(--concrete);
   --foreground: var(--iron);
   --card: oklch(1 0 0);
   --card-foreground: var(--iron);

@@ -163,7 +163,7 @@ function HowItWorks() {
 
 function WhoItsFor() {
   return (
-    <section id="who" className="py-24 px-6 sm:px-8 bg-concrete">
+    <section id="who" className="py-24 px-6 sm:px-8 bg-white">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         <img
           src={buildersImg}
@@ -248,7 +248,7 @@ function Footer() {
 
 function Index() {
   return (
-    <div className="min-h-screen bg-white font-sans text-iron">
+    <div className="min-h-screen bg-concrete font-sans text-iron">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link
