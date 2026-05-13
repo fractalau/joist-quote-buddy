@@ -90,7 +90,7 @@ function Problem() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="space-y-6">
-            <span className="text-safety text-xs font-bold uppercase tracking-widest">The problem</span>
+            <span className="inline-block bg-safety/10 text-safety px-3 py-1 text-xs font-bold uppercase tracking-widest">The problem</span>
             <h2 className="font-display text-4xl leading-tight">Quoting takes hours. Most of it never wins work.</h2>
             <p className="text-steel text-lg leading-relaxed">
               You price a job from the plans. The client wants it cheaper. You re-price. They want a new spec. You re-price again. Half the time the build never starts.
@@ -146,7 +146,7 @@ function HowItWorks() {
   return (
     <section id="how" className="py-24 px-6 sm:px-8 max-w-7xl mx-auto">
       <div className="max-w-2xl mb-16">
-        <span className="text-safety text-xs font-bold uppercase tracking-widest">How it works</span>
+        <span className="inline-block bg-safety/10 text-safety px-3 py-1 text-xs font-bold uppercase tracking-widest">How it works</span>
         <h2 className="font-display text-4xl sm:text-5xl mt-4 leading-tight">
           Plans in. Priced estimate out.
         </h2>
@@ -177,7 +177,7 @@ function WhoItsFor() {
           className="w-full aspect-[5/6] object-cover bg-white shadow-sm rounded-sm"
         />
         <div>
-          <span className="text-safety text-xs font-bold uppercase tracking-widest">Who it's for</span>
+          <span className="inline-block bg-safety/10 text-safety px-3 py-1 text-xs font-bold uppercase tracking-widest">Who it's for</span>
           <h2 className="font-display text-4xl sm:text-5xl mt-4 mb-8 leading-tight">
             For builders running 1 to 10 jobs at a time.
           </h2>
