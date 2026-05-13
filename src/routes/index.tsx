@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import dashboardImg from "@/assets/dashboard-preview.jpg";
+import heroVideo from "@/assets/hero-demo.mp4";
 import buildersImg from "@/assets/builders-onsite.jpg";
 import logoImg from "@/assets/joist-logo.png";
 
@@ -60,11 +61,13 @@ function Hero() {
           </div>
         </div>
         <div className="relative">
-          <img
-            src={dashboardImg}
-            alt="Joist HQ quoting dashboard with line items and margin calculations"
-            width={1200}
-            height={896}
+          <video
+            src={heroVideo}
+            poster={dashboardImg}
+            autoPlay
+            muted
+            loop
+            playsInline
             className="w-full aspect-[4/3] object-cover bg-concrete shadow-2xl rounded-sm"
           />
           <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl border border-steel/40 hidden md:block rounded-sm">
