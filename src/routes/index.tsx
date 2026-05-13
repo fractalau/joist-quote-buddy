@@ -39,7 +39,7 @@ function Hero() {
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div>
           <span className="inline-block bg-safety/10 text-safety px-3 py-1 text-xs font-bold uppercase tracking-widest mb-6">
-            Built for NZ residential builders
+            Plan · Scan · Price
           </span>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-8">
             Stop quoting for <span className="text-iron/40 italic">free.</span> Start winning for real.
