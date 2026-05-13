@@ -48,7 +48,7 @@
   --concrete: oklch(0.967 0.005 80);
   --steel: oklch(0.88 0.008 80);
 
-  --background: oklch(1 0 0);
+  --background: var(--concrete);
   --foreground: var(--iron);
   --card: oklch(1 0 0);
   --card-foreground: var(--iron);
