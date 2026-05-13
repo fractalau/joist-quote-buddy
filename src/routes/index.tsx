@@ -178,7 +178,7 @@ function Problem() {
           ].map((card) => (
             <div
               key={card.n}
-              className="p-8 border border-white/10 hover:border-safety/50 transition-colors group"
+              className="p-8 border border-white/10 hover:border-safety/50 transition-colors group bg-[#1a2833]"
             >
               <div className="size-10 bg-white/5 flex items-center justify-center mb-6 group-hover:bg-safety/20 rounded-sm">
                 <span className="text-safety font-bold">{card.n}</span>
