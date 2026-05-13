@@ -98,8 +98,64 @@ function Hero() {
 
 function Problem() {
   return (
-    <section id="problem" className="bg-iron text-white py-24 px-6 sm:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section
+      id="problem"
+      className="relative bg-iron text-white py-24 px-6 sm:px-8 overflow-hidden"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px)",
+        backgroundSize: "80px 80px, 80px 80px, 16px 16px, 16px 16px",
+      }}
+    >
+      {/* Blueprint house schematic */}
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 600 400"
+        className="pointer-events-none absolute -right-12 top-1/2 -translate-y-1/2 w-[320px] sm:w-[420px] lg:w-[540px] opacity-20 text-white"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.25"
+      >
+        {/* Roof */}
+        <path d="M60 180 L300 60 L540 180" />
+        <path d="M60 180 L60 360 L540 360 L540 180" />
+        {/* Roof ridge dashes */}
+        <path d="M300 60 L300 180" strokeDasharray="4 4" />
+        {/* Interior walls */}
+        <path d="M240 180 L240 360" />
+        <path d="M240 260 L420 260" />
+        <path d="M420 180 L420 360" />
+        {/* Door */}
+        <path d="M120 360 L120 290 L180 290 L180 360" />
+        <path d="M120 290 A60 60 0 0 1 180 290" strokeDasharray="3 3" />
+        {/* Windows */}
+        <rect x="280" y="200" width="60" height="40" />
+        <line x1="310" y1="200" x2="310" y2="240" />
+        <rect x="450" y="200" width="60" height="40" />
+        <line x1="480" y1="200" x2="480" y2="240" />
+        <rect x="280" y="290" width="60" height="40" />
+        <rect x="450" y="290" width="60" height="40" />
+        {/* Dimension lines */}
+        <path d="M60 390 L540 390" strokeDasharray="2 4" />
+        <path d="M60 384 L60 396 M540 384 L540 396" />
+        <path d="M570 60 L570 360" strokeDasharray="2 4" />
+        <path d="M564 60 L576 60 M564 360 L576 360" />
+        {/* Labels */}
+        <text x="300" y="385" textAnchor="middle" fontSize="10" fill="currentColor" stroke="none" fontFamily="monospace">14400</text>
+        <text x="585" y="215" fontSize="10" fill="currentColor" stroke="none" fontFamily="monospace" transform="rotate(90 585 215)">9000</text>
+        <text x="150" y="330" textAnchor="middle" fontSize="9" fill="currentColor" stroke="none" fontFamily="monospace">ENTRY</text>
+        <text x="150" y="220" textAnchor="middle" fontSize="9" fill="currentColor" stroke="none" fontFamily="monospace">LIVING</text>
+        <text x="330" y="280" textAnchor="middle" fontSize="9" fill="currentColor" stroke="none" fontFamily="monospace">KITCHEN</text>
+        <text x="480" y="280" textAnchor="middle" fontSize="9" fill="currentColor" stroke="none" fontFamily="monospace">BED 1</text>
+      </svg>
+
+      {/* Title block corner */}
+      <div className="pointer-events-none absolute bottom-6 right-6 hidden md:block font-mono text-[10px] uppercase tracking-widest text-white/40 border border-white/20 px-3 py-2 rounded-sm">
+        <div>Drawing No. JH-001</div>
+        <div>Scale 1:100 · Rev A</div>
+      </div>
+
+      <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="space-y-6">
             <span className="inline-block bg-safety/10 text-safety px-3 py-1 text-xs font-bold uppercase tracking-widest">The problem</span>
