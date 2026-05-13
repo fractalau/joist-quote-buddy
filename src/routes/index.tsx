@@ -63,7 +63,7 @@ function Hero() {
         <div className="relative">
           {/* Laptop frame */}
           <div className="bg-iron rounded-t-xl p-3 sm:p-4 shadow-2xl">
-            <div className="bg-black rounded-md overflow-hidden aspect-[16/10]">
+            <div className="bg-black rounded-md overflow-hidden aspect-[16/9]">
               <video
                 src={heroVideo}
                 poster={dashboardImg}
