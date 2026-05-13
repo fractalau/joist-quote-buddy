@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "The fastest way for small NZ residential building firms to price projects, handle variations, and win more work. Built for owner-operators." },
       { name: "author", content: "Joist HQ" },
       { property: "og:title", content: "Joist HQ — Quoting software for NZ residential builders" },
-      { property: "og:description", content: "Stop quoting for free. Price residential projects faster, iterate instantly, and win more work." },
+      { property: "og:description", content: "The fastest way for small NZ residential building firms to price projects, handle variations, and win more work. Built for owner-operators." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Joist HQ — Quoting software for NZ residential builders" },
+      { name: "twitter:description", content: "The fastest way for small NZ residential building firms to price projects, handle variations, and win more work. Built for owner-operators." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/cec90920-3f70-4b89-8805-c4e7e0124844" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/cec90920-3f70-4b89-8805-c4e7e0124844" },
     ],
     links: [
       {
