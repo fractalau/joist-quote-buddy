@@ -61,15 +61,24 @@ function Hero() {
           </div>
         </div>
         <div className="relative">
-          <video
-            src={heroVideo}
-            poster={dashboardImg}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full aspect-[4/3] object-cover bg-concrete shadow-2xl rounded-sm"
-          />
+          {/* Laptop frame */}
+          <div className="bg-iron rounded-t-xl p-3 sm:p-4 shadow-2xl">
+            <div className="bg-black rounded-md overflow-hidden aspect-[16/10]">
+              <video
+                src={heroVideo}
+                poster={dashboardImg}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          {/* Laptop base */}
+          <div className="relative mx-auto h-3 sm:h-4 w-[108%] -ml-[4%] bg-steel rounded-b-xl shadow-lg">
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-24 h-1.5 bg-iron/30 rounded-b-lg" />
+          </div>
           <div className="absolute -bottom-6 -left-6 bg-white p-6 shadow-xl border border-steel/40 hidden md:block rounded-sm">
             <div className="flex gap-4 items-center">
               <div className="size-12 rounded-full bg-safety/10 grid place-items-center text-safety">
