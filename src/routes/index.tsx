@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import dashboardImg from "@/assets/dashboard-preview.jpg";
 import buildersImg from "@/assets/builders-onsite.jpg";
+import logoImg from "@/assets/joist-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -8,12 +9,11 @@ export const Route = createFileRoute("/")({
 
 function Logo({ className = "" }: { className?: string }) {
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
-      <div className="size-8 bg-iron flex items-center justify-center rounded-sm font-display text-white text-xl">
-        J
-      </div>
-      <span className="font-display text-xl tracking-tight uppercase">Joist HQ</span>
-    </div>
+    <img
+      src={logoImg}
+      alt="Joist HQ — Plan, Scan, Price"
+      className={`h-12 w-auto rounded-sm ${className}`}
+    />
   );
 }
 
