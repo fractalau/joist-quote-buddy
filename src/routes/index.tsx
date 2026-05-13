@@ -42,17 +42,20 @@ function Hero() {
             Plan · Scan · Price
           </span>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-8">
-            Stop quoting for <span className="text-iron/40 italic">free.</span> Start winning for real.
+            Estimate your build in minutes.
           </h1>
           <p className="text-lg sm:text-xl text-iron/70 leading-relaxed mb-10 max-w-xl">
-            The fastest way for small NZ building firms to price residential projects. Spend less time at the desk and more time on the tools — or with your family.
+            Upload the plans. Joist HQ reads them, pre-fills the inputs, and generates a structured estimate in minutes. When the client wants changes, update the inputs and re-run. No spreadsheet, no re-work.
+          </p>
+          <p className="text-base text-iron/60 mb-10 max-w-xl">
+            Built on real project actuals from completed NZ builds. Not industry averages.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-safety text-white px-8 py-4 font-bold uppercase tracking-widest hover:brightness-110 transition-all rounded-sm">
               Start free trial
             </button>
             <button className="border-2 border-iron px-8 py-4 font-bold uppercase tracking-widest hover:bg-iron hover:text-white transition-all rounded-sm">
-              Watch workflow
+              See how it works
             </button>
           </div>
         </div>
@@ -70,8 +73,8 @@ function Hero() {
                 <span className="font-bold">4×</span>
               </div>
               <div>
-                <p className="text-xs font-bold uppercase tracking-tighter">Faster quoting</p>
-                <p className="text-sm text-iron/60">vs. spreadsheets</p>
+                <p className="text-xs font-bold uppercase tracking-tighter">Faster than spreadsheets</p>
+                <p className="text-sm text-iron/60">From plans to priced estimate</p>
               </div>
             </div>
           </div>
@@ -88,21 +91,21 @@ function Problem() {
         <div className="grid lg:grid-cols-3 gap-12">
           <div className="space-y-6">
             <span className="text-safety text-xs font-bold uppercase tracking-widest">The problem</span>
-            <h2 className="font-display text-4xl leading-tight">The re-pricing loop ends here.</h2>
+            <h2 className="font-display text-4xl leading-tight">Quoting takes hours. Most of it never wins work.</h2>
             <p className="text-steel text-lg leading-relaxed">
-              Tired of spending your Sundays pulling together numbers, only for the client to ask for a "scaled-back" version? Joist HQ makes updates instant — without losing accuracy.
+              You price a job from the plans. The client wants it cheaper. You re-price. They want a new spec. You re-price again. Half the time the build never starts.
             </p>
           </div>
           {[
             {
               n: "01",
-              title: "Rapid iteration",
-              body: "Swap materials, adjust margins, and re-cost the entire build in seconds. No more fragile spreadsheets that break when you change one cell.",
+              title: "Re-run, don't rebuild",
+              body: "Change a wall length, swap cladding, drop a bathroom — Joist HQ re-costs the whole estimate. No formulas to fix, no cells to chase.",
             },
             {
               n: "02",
-              title: "Credible proposals",
-              body: "Present like a tier-one firm. Generate professional, branded PDFs that give clients confidence in your numbers and your professionalism.",
+              title: "Numbers the client can read",
+              body: "Trade-by-trade breakdown with m² rates and quantities. The client sees where the money goes. Fewer arguments about the total.",
             },
           ].map((card) => (
             <div
@@ -126,18 +129,18 @@ function HowItWorks() {
   const steps = [
     {
       n: "01",
-      title: "Build the quote",
-      body: "Start from a template or a blank slate. Drop in your materials, labour, and supplier markups — pulled from your real relationships.",
+      title: "Upload the plans",
+      body: "Drop in the architectural PDFs. Joist HQ reads the drawings and pulls quantities — floor area, wall lengths, openings, roof pitch.",
     },
     {
       n: "02",
-      title: "Send it across",
-      body: "Generate a clean, branded proposal in minutes. Clients see the detail and the total — no scribbled-on PDFs.",
+      title: "Check the inputs",
+      body: "Pre-filled trade breakdown with m² rates, labour hours, and material quantities. Adjust anything that doesn't match the job.",
     },
     {
       n: "03",
-      title: "Iterate without pain",
-      body: "When feedback comes back, change the variable, not the whole sheet. Re-issue in seconds, not on a Sunday night.",
+      title: "Run it. Re-run it.",
+      body: "Get a structured estimate in minutes. Client wants changes? Update the inputs, re-run. The numbers stay tied to the plans.",
     },
   ];
   return (
@@ -145,7 +148,7 @@ function HowItWorks() {
       <div className="max-w-2xl mb-16">
         <span className="text-safety text-xs font-bold uppercase tracking-widest">How it works</span>
         <h2 className="font-display text-4xl sm:text-5xl mt-4 leading-tight">
-          From site visit to signed quote — without the late nights.
+          Plans in. Priced estimate out.
         </h2>
       </div>
       <div className="grid md:grid-cols-3 gap-8 border-t border-steel/50">
@@ -176,21 +179,21 @@ function WhoItsFor() {
         <div>
           <span className="text-safety text-xs font-bold uppercase tracking-widest">Who it's for</span>
           <h2 className="font-display text-4xl sm:text-5xl mt-4 mb-8 leading-tight">
-            Designed for the 3-to-10 person crew.
+            For builders running 1 to 10 jobs at a time.
           </h2>
           <div className="space-y-8">
             {[
               {
-                t: "Owner-operator focused",
-                b: "We know you're still on-site. Joist HQ is built to be used in the ute or at the kitchen table after dinner.",
+                t: "Built for owner-operators",
+                b: "You're still on the tools. Quote from the ute, the site office, or the kitchen table after dinner. Works on a phone.",
               },
               {
-                t: "NZ supplier ready",
-                b: "Pre-load your local merchant pricing and relationship-based discounts so quotes reflect what you'll actually pay.",
+                t: "Priced on NZ actuals",
+                b: "Rates come from completed NZ residential builds — not industry averages, not Australian data. Updated as new project actuals come in.",
               },
               {
-                t: "Professional edge",
-                b: "Look like you have an estimating department, even if it's just you and a couple of apprentices.",
+                t: "Your suppliers, your margins",
+                b: "Load your merchant pricing and trade rates once. Every estimate uses what you actually pay, not a generic markup.",
               },
             ].map((item) => (
               <div key={item.t} className="flex gap-6">
@@ -212,9 +215,9 @@ function FinalCta() {
   return (
     <section className="py-24 sm:py-32 px-6 sm:px-8 text-center">
       <div className="max-w-3xl mx-auto">
-        <h2 className="font-display text-4xl sm:text-5xl mb-6">Ready to claim back your evenings?</h2>
+        <h2 className="font-display text-4xl sm:text-5xl mb-6">Price your next job in minutes.</h2>
         <p className="text-lg sm:text-xl text-iron/60 mb-10">
-          Join Kiwi builders using Joist HQ to speed up their quoting and win more profitable work.
+          Upload a set of plans. See a full structured estimate. Decide if it's worth your time.
         </p>
         <div className="inline-flex flex-col items-center">
           <button className="bg-safety text-white px-10 sm:px-12 py-4 sm:py-5 font-bold uppercase tracking-widest hover:scale-[1.02] transition-transform rounded-sm">
