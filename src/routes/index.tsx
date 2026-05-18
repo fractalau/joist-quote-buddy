@@ -310,7 +310,7 @@ function Footer() {
         </p>
         <div className="flex gap-6">
           <Link to="/privacy" className="text-xs font-bold uppercase tracking-widest hover:text-safety transition-colors">Privacy</Link>
-          <a href="#" className="text-xs font-bold uppercase tracking-widest hover:text-safety transition-colors">Terms</a>
+          <Link to="/terms" className="text-xs font-bold uppercase tracking-widest hover:text-safety transition-colors">Terms</Link>
         </div>
       </div>
     </footer>
