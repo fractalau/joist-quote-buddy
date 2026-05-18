@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import dashboardImg from "@/assets/dashboard-preview.jpg";
 import heroVideo from "@/assets/hero-demo.mp4";
 import buildersImg from "@/assets/builders-onsite.jpg";
@@ -309,7 +309,7 @@ function Footer() {
           © {new Date().getFullYear()} Joist HQ NZ. Built for the trades, by the trades.
         </p>
         <div className="flex gap-6">
-          <a href="#" className="text-xs font-bold uppercase tracking-widest hover:text-safety transition-colors">Privacy</a>
+          <Link to="/privacy" className="text-xs font-bold uppercase tracking-widest hover:text-safety transition-colors">Privacy</Link>
           <a href="#" className="text-xs font-bold uppercase tracking-widest hover:text-safety transition-colors">Terms</a>
         </div>
       </div>
