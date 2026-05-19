@@ -88,6 +88,20 @@ function TermsPage() {
           </section>
 
           <section>
+            <h2 className="font-display text-2xl mb-3">AI-assisted estimates</h2>
+            <p className="text-iron/70 leading-relaxed">
+              Joist HQ uses a combination of artificial intelligence and the
+              plans, specifications, and documents you provide to calculate
+              quantities, costs, and other estimate values. AI outputs are
+              probabilistic and depend on the quality and completeness of
+              the inputs, so perfect estimation accuracy isn't always
+              possible. Treat all AI-generated figures as a starting point —
+              you're responsible for reviewing, adjusting, and verifying
+              every estimate before relying on it or sending it to a client.
+            </p>
+          </section>
+
+          <section>
             <h2 className="font-display text-2xl mb-3">Service availability</h2>
             <p className="text-iron/70 leading-relaxed">
               We aim to keep Joist HQ available and accurate, but we don't
